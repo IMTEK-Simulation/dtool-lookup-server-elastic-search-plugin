@@ -8,7 +8,7 @@ def local_scheme(version):
     to be able to upload to Test PyPI"""
     return ""
 
-url = "https://github.com/IMTEK-Simulation/dserver-notification-plugin"
+url = "https://github.com/livMatS/dserver-notification-plugin"
 readme = open('README.rst').read()
 
 setup(
@@ -27,13 +27,13 @@ setup(
     },
     url=url,
     entry_points={
-        'dserver.extension': [
+        'dtool_lookup_server.extension': [
             'NotficationExtension=dserver_notification_plugin:NotificationExtension',
         ],
     },
     setup_requires=['setuptools_scm'],
     install_requires=[
-        "dserver>=0.17.2",
+        "dtool-lookup-server>=0.17.2",
         "dtoolcore>=3.17.0",
         "dtool-s3>=0.13.0",
     ],

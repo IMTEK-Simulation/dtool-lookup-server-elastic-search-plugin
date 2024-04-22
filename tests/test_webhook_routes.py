@@ -7,7 +7,7 @@ import yaml
 from dtoolcore import DataSet
 from dtoolcore.utils import generate_identifier, sanitise_uri
 
-from dserver.utils import (
+from dtool_lookup_server.utils import (
     get_readme_from_uri_by_user,
     list_datasets_by_user,
     register_base_uri,

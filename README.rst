@@ -1,5 +1,5 @@
-Dtool Lookup Server Notification Plugin
-=======================================
+dserver Notification Plugin
+===========================
 
 .. image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main
     :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
@@ -34,7 +34,7 @@ However, if one has to manage more than a hundred datasets it can be helpful
 to have the datasets' metadata stored in a central server to enable one to
 quickly find datasets of interest.
 
-The `dserver <https://github.com/jic-dtool/dserver>`_
+`dtool-lookup-server <https://github.com/jic-dtool/dtool-lookup-server>`_
 provides a web API for registering datasets' metadata
 and provides functionality to lookup, list and search for datasets.
 

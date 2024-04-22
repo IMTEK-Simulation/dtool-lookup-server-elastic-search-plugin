@@ -28,16 +28,16 @@ from functools import wraps
 
 import dtoolcore, dtool_s3
 
-from dserver import (
+from dtool_lookup_server import (
     sql_db,
     ValidationError,
     ExtensionABC
 )
-from dserver.sql_models import (
+from dtool_lookup_server.sql_models import (
     BaseURI,
     Dataset,
 )
-from dserver.utils import (
+from dtool_lookup_server.utils import (
     base_uri_exists,
 )
 
@@ -49,14 +49,14 @@ from flask import (
 
 from flask_smorest import Blueprint
 
-from dserver import (
+from dtool_lookup_server import (
     AuthenticationError,
     sql_db
 )
-from dserver.sql_models import (
+from dtool_lookup_server.sql_models import (
     Dataset,
 )
-from dserver.utils import (
+from dtool_lookup_server.utils import (
     generate_dataset_info,
     register_dataset,
 )
