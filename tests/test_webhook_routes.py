@@ -58,10 +58,10 @@ def test_webhook_notify_route(tmp_app_with_users, tmp_dir_fixture,
     # Check that dataset has actually been registered
     datasets = list_datasets_by_user('snow-white')
     assert len(datasets) == 1
-    assert datasets[0]['base_uri'] == base_uri
-    assert datasets[0]['uri'] == dest_uri
-    assert datasets[0]['uuid'] == uuid # admin_metadata['uuid']
-    assert datasets[0]['name'] == name
+    assert datasets[0].base_uri == base_uri
+    assert datasets[0].uri == dest_uri
+    assert datasets[0].uuid == uuid # admin_metadata['uuid']
+    assert datasets[0].name == name
 
     # Check README
     check_readme = get_readme_from_uri_by_user('snow-white', dest_uri)
@@ -78,10 +78,10 @@ def test_webhook_notify_route(tmp_app_with_users, tmp_dir_fixture,
     # Check dataset
     datasets = list_datasets_by_user('snow-white')
     assert len(datasets) == 1
-    assert datasets[0]['base_uri'] == base_uri
-    assert datasets[0]['uri'] == dest_uri
-    assert datasets[0]['uuid'] == uuid
-    assert datasets[0]['name'] == name
+    assert datasets[0].base_uri == base_uri
+    assert datasets[0].uri == dest_uri
+    assert datasets[0].uuid == uuid
+    assert datasets[0].name == name
 
     # Check that README has actually been changed
     check_readme = get_readme_from_uri_by_user('snow-white', dest_uri)
