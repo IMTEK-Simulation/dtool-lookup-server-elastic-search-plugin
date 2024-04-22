@@ -11,7 +11,7 @@ from dtool_lookup_server.utils import (
     get_readme_from_uri_by_user,
     list_datasets_by_user,
     register_base_uri,
-    put_permissions,
+    register_permissions,
 )
 from dserver_notification_plugin import Config
 
@@ -22,7 +22,7 @@ def test_webhook_notify_route(tmp_app_with_users, tmp_dir_fixture,
     # Add local directory as base URI and assign URI to the bucket
     base_uri = sanitise_uri(tmp_dir_fixture)
     register_base_uri(base_uri)
-    put_permissions(base_uri, {
+    register_permissions(base_uri, {
         'users_with_search_permissions': ['snow-white'],
         'users_with_register_permissions': ['snow-white'],
     })
