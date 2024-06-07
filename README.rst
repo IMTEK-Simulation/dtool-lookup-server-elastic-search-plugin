@@ -1,15 +1,15 @@
 dserver Notification Plugin
 ===========================
 
-.. image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main
-    :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
-    :alt: GitHub Workflow Status
-.. image:: https://img.shields.io/pypi/v/dserver-notification-plugin
-    :alt: PyPI
-    :target: https://pypi.org/project/dserver-notification-plugin/
-.. image:: https://img.shields.io/github/v/tag/livMatS/dserver-notification-plugin
-    :alt: GitHub tag (latest by date)
+.. |dtool| image:: icons/22x22/dtool_logo.png
+    :height: 20px
+    :target: https://github.com/livMatS/dserver-notification-plugin
+.. |pypi| image:: https://badge.fury.io/py/dserver-notification-plugin.svg
+    :target: http://badge.fury.io/py/dserver-notification-plugin
+.. |tag| image:: https://img.shields.io/github/v/tag/livMatS/dserver-notification-plugin
     :target: https://github.com/livMatS/dserver-notification-plugin/tags
+.. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main
+    :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
 
 - GitHub: https://github.com/livMatS/dserver-notification-plugin
 - PyPI: https://pypi.python.org/pypi/dserver-notification-plugin
