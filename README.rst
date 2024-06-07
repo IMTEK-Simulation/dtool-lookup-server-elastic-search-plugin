@@ -11,6 +11,8 @@ dserver Notification Plugin
 .. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main
     :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
 
+|dtool| |pypi| |tag| |test|
+
 - GitHub: https://github.com/livMatS/dserver-notification-plugin
 - PyPI: https://pypi.python.org/pypi/dserver-notification-plugin
 - Free software: MIT License
