@@ -19,7 +19,9 @@ def test_config_info_route(tmp_app_with_users, snowwhite_token):  # NOQA
         "bucket_to_base_uri": {"bucket": "s3://bucket"},
     }
 
-    response = json.loads(r.data.decode("utf-8"))['config']
+    response = json.loads(r.data.decode("utf-8"))
+
+    assert "config" in response
 
     marker = comparison_marker_from_obj(expected_response)
-    assert compare_marked_nested(response, expected_response, marker)
+    assert compare_marked_nested(response['config'], expected_response, marker)
