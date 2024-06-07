@@ -1,7 +1,7 @@
 dserver Notification Plugin
 ===========================
 
-.. |dtool| image:: https://github.com/livMatS/dserver-notification-plugin/blob/main/icons/22x22/dtool_logo.png
+.. |dtool| image:: https://github.com/livMatS/dserver-notification-plugin/blob/main/icons/22x22/dtool_logo.png?raw=True
     :height: 20px
     :target: https://github.com/livMatS/dserver-notification-plugin
 .. |pypi| image:: https://badge.fury.io/py/dserver-notification-plugin.svg
