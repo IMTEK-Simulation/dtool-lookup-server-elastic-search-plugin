@@ -1,6 +1,12 @@
 Change log for dserver-notification-plugin
 ==========================================
 
+0.3.0 (07Jun24)
+---------------
+
+* Rebranded prefix ``dtool-lookup-server-`` to ``dserver-``
+* Switched from ``setup.py`` to ``pyproject.toml``
+* Adapted to new dserver REST API standard.
 
 0.2.2 (09Mar22)
 ---------------
