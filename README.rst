@@ -4,8 +4,8 @@ dserver Notification Plugin
 .. |dtool| image:: https://github.com/livMatS/dserver-notification-plugin/blob/main/icons/22x22/dtool_logo.png?raw=True
     :height: 20px
     :target: https://github.com/livMatS/dserver-notification-plugin
-.. |pypi| image:: https://badge.fury.io/py/dserver-notification-plugin.svg
-    :target: http://badge.fury.io/py/dserver-notification-plugin
+.. |pypi| image:: https://img.shields.io/pypi/v/dserver-notification-plugin
+    :target: https://pypi.org/project/dserver-notification-plugin/
 .. |tag| image:: https://img.shields.io/github/v/tag/livMatS/dserver-notification-plugin
     :target: https://github.com/livMatS/dserver-notification-plugin/tags
 .. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main
