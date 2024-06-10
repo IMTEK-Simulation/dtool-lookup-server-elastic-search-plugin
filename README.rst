@@ -8,7 +8,7 @@ dserver Notification Plugin
     :target: https://pypi.org/project/dserver-notification-plugin/
 .. |tag| image:: https://img.shields.io/github/v/tag/livMatS/dserver-notification-plugin
     :target: https://github.com/livMatS/dserver-notification-plugin/tags
-.. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main?label=tests
+.. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main&label=tests
     :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
 
 |dtool| |pypi| |tag| |test|
