@@ -36,7 +36,7 @@ However, if one has to manage more than a hundred datasets it can be helpful
 to have the datasets' metadata stored in a central server to enable one to
 quickly find datasets of interest.
 
-`dtool-lookup-server <https://github.com/jic-dtool/dtool-lookup-server>`_
+`dservercore <https://github.com/jic-dtool/dservercore>`_
 provides a web API for registering datasets' metadata
 and provides functionality to lookup, list and search for datasets.
 
