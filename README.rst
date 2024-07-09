@@ -10,8 +10,10 @@ dserver Notification Plugin
     :target: https://github.com/livMatS/dserver-notification-plugin/tags
 .. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main&label=tests
     :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
+.. |zenodo| image:: https://zenodo.org/badge/365692008.svg
+    :target: https://zenodo.org/doi/10.5281/zenodo.12702039
 
-|dtool| |pypi| |tag| |test|
+|dtool| |pypi| |tag| |test| |zenodo|
 
 - GitHub: https://github.com/livMatS/dserver-notification-plugin
 - PyPI: https://pypi.python.org/pypi/dserver-notification-plugin
