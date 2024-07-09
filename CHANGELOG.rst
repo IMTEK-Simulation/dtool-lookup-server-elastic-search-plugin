@@ -1,6 +1,11 @@
 Change log for dserver-notification-plugin
 ==========================================
 
+0.4.1 (9Jul24)
+---------------
+
+* Automated github release creation
+
 0.4.0 (13Jun24)
 ---------------
 
