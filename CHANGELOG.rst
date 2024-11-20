@@ -1,7 +1,12 @@
 Change log for dserver-notification-plugin
 ==========================================
 
-0.4.2 (9Jul24)
+0.4.3 (20Nov24)
+---------------
+
+* Detailed logging, more header fields treated.
+
+0.4.2 (20Nov24)
 ---------------
 
 * Return proper error code on request without content.
