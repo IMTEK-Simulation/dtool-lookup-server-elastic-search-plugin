@@ -1,6 +1,12 @@
 Change log for dserver-notification-plugin
 ==========================================
 
+0.4.2 (9Jul24)
+---------------
+
+* Return proper error code on request without content.
+* Filter IPs by ``HTTP_X_REAL_IP`` if header entry is present. This is usually the case when header is rewritten by reverse proxy.
+
 0.4.1 (9Jul24)
 ---------------
 

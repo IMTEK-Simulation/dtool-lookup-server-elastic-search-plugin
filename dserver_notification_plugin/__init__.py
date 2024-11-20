@@ -79,7 +79,9 @@ def _log_nested(log_func, dct):
 def filter_ips(f):
     @wraps(f)
     def wrapped(*args, **kwargs):
-        ip = ipaddress.ip_address(request.remote_addr)
+        # Check if header has been rewritten by reverse proxy and look into HTTP_X_REAL_IP first
+        real_ip = request.headers.get('HTTP_X_REAL_IP', request.remote_addr)
+        ip = ipaddress.ip_address(real_ip)
         logger.info("Accessed from %s", ip)
         if ip in Config.ALLOW_ACCESS_FROM:
             return f(*args, **kwargs)
@@ -446,6 +448,11 @@ def notify(path):
     dataset."""
 
     json_content = None
+
+    if request.content_type is None:
+        error_msg = "No content in request."
+        logger.error(error_msg)
+        abort(400, message=error_msg)
 
     # special treatment for form data as submitted by NetApp Storage GRID
     if request.content_type.startswith('application/x-www-form-urlencoded'):
