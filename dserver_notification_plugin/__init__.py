@@ -80,7 +80,22 @@ def filter_ips(f):
     @wraps(f)
     def wrapped(*args, **kwargs):
         # Check if header has been rewritten by reverse proxy and look into HTTP_X_REAL_IP first
-        real_ip = request.headers.get('HTTP_X_REAL_IP', request.remote_addr)
+
+        real_ip = request.headers.get('HTTP_X_REAL_IP', None)
+
+        if real_ip is None:
+            logger.debug("request.headers does not contain field HTTP_X_REAL_IP, try X-Forwarded-For")
+            real_ip = request.headers.get('X-Forwarded-For', None)
+
+        if real_ip is None:
+            logger.debug("request.headers does not contain field X-Forwarded-For, try X-Real-IP")
+            real_ip = request.headers.get('X-Real-IP', None)
+
+        if real_ip is None:
+            logger.debug("request.headers does not contain field HTTP_X_REAL_IP.")
+            real_ip = request.remote_addr
+            logger.debug("Instead use request.remote_addr '%s%'.", real_ip)
+
         ip = ipaddress.ip_address(real_ip)
         logger.info("Accessed from %s", ip)
         if ip in Config.ALLOW_ACCESS_FROM:
