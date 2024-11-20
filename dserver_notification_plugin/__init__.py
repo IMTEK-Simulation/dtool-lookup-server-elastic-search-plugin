@@ -449,6 +449,11 @@ def notify(path):
 
     json_content = None
 
+    if request.content_type is None:
+        error_msg = "No content in request."
+        logger.error(error_msg)
+        abort(400, message=error_msg)
+
     # special treatment for form data as submitted by NetApp Storage GRID
     if request.content_type.startswith('application/x-www-form-urlencoded'):
         logger.debug("Received 'application/x-www-form-urlencoded' content.")
