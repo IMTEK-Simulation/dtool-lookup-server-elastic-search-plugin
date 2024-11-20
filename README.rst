@@ -76,33 +76,6 @@ to specify the allowed remote network. To specify a single IP, use::
 
     DSERVER_NOTIFY_ALLOW_ACCESS_FROM=192.168.1.1/32
 
-Configure elastic search integration in NetApp StorageGRID
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Create a new endpoint with URI ``https://myserver:myport/elastic-search``
-and URN ``arn:<mysite>:es:::<domain-name>/notify/all``
-
-Note that `<mysite>` and `<domain-name>` can be chose arbitrarily.
-`notify/all` is appended to the URI and must point to the route of
-the notify function.
-
-The bucket needs to be configured to support search integration. Use the
-following XML template
-
-.. code-block:: xml
-
-    <MetadataNotificationConfiguration>
-        <Rule>
-            <ID>dtool</ID>
-            <Status>Enabled</Status>
-            <Prefix></Prefix>
-            <Destination>
-               <Urn>urn:mysite:es:::domain-name/notify/all</Urn>
-            </Destination>
-        </Rule>
-    </MetadataNotificationConfiguration>
-
-
 Configure webhook in minio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -151,8 +124,8 @@ communicate with an SNS endpoint, refer to the according sections of the
 and
 `configuring event notifications <https://docs.netapp.com/sgws-115/topic/com.netapp.doc.sg-tenant-admin/GUID-F2555EFF-C99B-4F83-9009-C8D59F9EA545.html>`_.
 
-In short, create an endpoint ```http://dserver:5000/webhook/notify```
-with a suitable URN, i.e. `urn:dserver:sns:region:notify:all`,
+In short, create an endpoint ``http://dserver:5000/webhook/notify``
+with a suitable URN, i.e. ``urn:dserver:sns:region:notify:all``,
 where you may pick all fields freely except ``urn`` and ``sns``. 
 
 Next, enable event notifications for the desired bucket, i.e. for object creation events with a policy snippet like this:
